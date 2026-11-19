@@ -1,16 +1,16 @@
-# 🛵 Super Fast Delivery — Predicción del tiempo de entrega de pedidos (Rappi)
+#  Super Fast Delivery — Predicción del tiempo de entrega de pedidos (Rappi)
 
 Proyecto de **Inteligencia Artificial** (Universidad Industrial de Santander) que estima el **tiempo de entrega de un pedido en minutos** (`Time_taken_min`) usando únicamente información disponible antes del envío. El trabajo combina análisis exploratorio (EDA), aprendizaje supervisado, reducción de dimensionalidad (PCA) y aprendizaje no supervisado (clustering).
 
 ---
 
-## 🎥 Video de presentación
+##  Video de presentación
 
-▶️ **[https://drive.google.com/file/d/1mwK-jojOiz8UXUJg07LAoyqzkGifWviD/view?usp=sharing]**
+ **[https://drive.google.com/file/d/1mwK-jojOiz8UXUJg07LAoyqzkGifWviD/view?usp=sharing]**
 
 ---
 
-## 👥 Integrantes
+##  Integrantes
 
 | Nombre | Codigo/|
 |---|---|
@@ -21,7 +21,7 @@ Proyecto de **Inteligencia Artificial** (Universidad Industrial de Santander) qu
 
 ---
 
-## 📦 Datos utilizados
+##  Datos utilizados
 
 ### Fuente
 
@@ -35,7 +35,7 @@ Proyecto de **Inteligencia Artificial** (Universidad Industrial de Santander) qu
 | **Tamaño** | 50.000 filas × 24 columnas |
 | **Variable objetivo** | `Time_taken_min` (minutos) |
 
-> ⚠️ **Nota sobre los datos:** no son datos internos de Rappi. Se trata de un dataset público de domicilios de comida que usamos como caso de estudio y que, por su comportamiento, parece **sintético** (se discute como limitación en las conclusiones del notebook).
+>  **Nota sobre los datos:** no son datos internos de Rappi. Se trata de un dataset público de domicilios de comida que usamos como caso de estudio y que, por su comportamiento, parece **sintético** (se discute como limitación en las conclusiones del notebook).
 
 ### Ubicación en este repositorio
 
@@ -88,7 +88,7 @@ Las 24 columnas originales incluyen, entre otras: `Order_ID`, `Order_Date`, `Ord
 
 ---
 
-## 🧭 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 .
@@ -111,7 +111,7 @@ Las 24 columnas originales incluyen, entre otras: `Order_ID`, `Order_Date`, `Ord
 
 ---
 
-## 📊 Resultados principales
+##  Resultados principales
 
 Evaluación en el conjunto de prueba (partición única 80/20, `shuffle=True`, `random_state=42`). Errores en minutos.
 
@@ -136,7 +136,7 @@ Evaluación en el conjunto de prueba (partición única 80/20, `shuffle=True`, `
 
 ---
 
-## ⚙️ Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 
 ### Opción 1 — Google Colab (recomendada)
 
@@ -162,7 +162,7 @@ jupyter notebook Proyecto_Rappi_IA.ipynb
 
 ---
 
-## ⚠️ Limitaciones
+##  Limitaciones
 
 - Dataset aparentemente sintético; los resultados no son directamente extrapolables a datos reales de Rappi.
 - La codificación *one-hot* no es ideal para PCA ni para K-Means.
@@ -170,13 +170,13 @@ jupyter notebook Proyecto_Rappi_IA.ipynb
 - Los errores siguen siendo mayores en entregas extremas (> 120 min).
 - No se hizo validación temporal (entrenar con el pasado y probar con el futuro).
 
-## 🚀 Mejoras futuras
+##  Mejoras futuras
 
 Ingeniería de variables (interacciones distancia × tráfico, hora pico), codificaciones alternativas para categóricas, modelos de *boosting* (XGBoost, LightGBM, CatBoost), validación temporal, intervalos de predicción y validación con datos reales.
 
 ---
 
-## 📄 Licencia y créditos
+##  Licencia y créditos
 
 - Dataset: autor `dharmendrapandit12` en Kaggle; consultar la licencia indicada en la página del dataset.
 - Proyecto académico — Inteligencia Artificial, Universidad Industrial de Santander.
